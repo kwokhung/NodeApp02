@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Living Strategy</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body {
+            background-color: grey;
+            font-family: 'Reenie Beanie', serif;
+            font-size: 48px;
+            text-shadow: 4px 4px 4px #aaa;
+        }
+
+        @media screen and (max-width: 960px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: orange;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        #wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            width: 96%; /* Holding outermost DIV */
+        }
+
+        #header {
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 97.9166667%; /* 940 ÷ 960 */
+        }
+
+        #navigation {
+            padding-bottom: 25px;
+            margin-top: 26px;
+            margin-left: -10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            width: 72.7083333%; /* 698 ÷ 960 */
+        }
+
+            #navigation ul li {
+                display: inline-block;
+            }
+
+        #content {
+            margin-top: 58px;
+            margin-right: 10px;
+            float: right;
+            width: 72.7083333%; /* 698 ÷ 960 */
+        }
+
+        #sidebar {
+            border-right-color: #e8e8e8;
+            border-right-style: solid;
+            border-right-width: 2px;
+            margin-top: 58px;
+            margin-right: 10px;
+            margin-left: 10px;
+            float: left;
+            width: 22.7083333%; /* 218 ÷ 960 */
+        }
+
+        #footer {
+            float: left;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            clear: both;
+            width: 97.9166667%; /* 940 ÷ 960 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- the header and navigation -->
+        <div id="header">
+            <div id="navigation">
+                <ul>
+                    <li><a href="#">navigation1</a></li>
+                    <li><a href="#">navigation2</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- the sidebar -->
+        <div id="sidebar">
+            <p>here is the sidebar</p>
+        </div>
+        <!-- the content -->
+        <div id="content">
+            <p>here is the content</p>
+        </div>
+        <!-- the footer -->
+        <div id="footer">
+            <p>Here is the footer</p>
+        </div>
+    </div>
+</body>
+</html>
