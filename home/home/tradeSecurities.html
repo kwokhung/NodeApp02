@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>證券買賣</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1 data-dojo-type="dojox/mobile/Heading">交易信息</h1>
+    <div style="height: 100%;" data-dojo-type="dojox/mobile/ScrollableView" data-dojo-mixins="app/widget/_Resizable">
+        <form>
+            <div data-dojo-type="dojox/mobile/RoundRect">
+                <div data-dojo-type="dojox/mobile/FormLayout">
+                    <div>
+                        <label>股票代號 :</label>
+                        <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/connection/TextBox'" value="" />
+                    </div>
+                    <div>
+                        <label>數量 :</label>
+                        <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/connection/TextBox'" value="" />
+                    </div>
+                    <div>
+                        <label>指示類型 :</label>
+                        <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/connection/TextBox'" value="限價盤" disabled />
+                    </div>
+                    <div>
+                        <label>價格 :</label>
+                        <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/connection/TextBox'" value="" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <table style="width: 100%; border: none; border-collapse: collapse; padding: 0;">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;"></td>
+                    <td style="width: 50%;">
+                        <div style="height: 42px;" data-dojo-type="dojox/mobile/GridLayout" data-dojo-props="cols: 2">
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblBlueButton full" data-dojo-type="app/widget/BtnLinkTo" data-dojo-props="url: 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe5653dce80baa14e&redirect_uri=http://livingstrategy.duapp.com&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect'">買</button>
+                            </div>
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblRedButton full" data-dojo-type="app/widget/BtnLinkTo" data-dojo-props="url: 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe5653dce80baa14e&redirect_uri=http://livingstrategy.duapp.com&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'">賣</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 25%;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

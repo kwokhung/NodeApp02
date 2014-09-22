@@ -4,7 +4,7 @@
     {
         "type": "view",
         "name": "登入",
-        "url": "http://livingstrategy.duapp.com/home/lamsoonMain.html?blkMainContent=lamsoon/Login"
+        "url": "http://node02atmblinus.azurewebsites.net/home/lamsoonMain.html?blkMainContent=lamsoon/Login"
     },
     {
         "name": "產品",
@@ -12,17 +12,17 @@
         {
             "type": "view",
             "name": "麵粉",
-            "url": "http://livingstrategy.duapp.com/home/lamsoonMain.html?blkMainContent=lamsoon/P001"
+            "url": "http://node02atmblinus.azurewebsites.net/home/lamsoonMain.html?blkMainContent=lamsoon/P001"
         },
         {
             "type": "view",
             "name": "食油",
-            "url": "http://livingstrategy.duapp.com/home/lamsoonMain.html?blkMainContent=lamsoon/P002"
+            "url": "http://node02atmblinus.azurewebsites.net/home/lamsoonMain.html?blkMainContent=lamsoon/P002"
         },
         {
             "type": "view",
             "name": "清潔用品",
-            "url": "http://livingstrategy.duapp.com/home/lamsoonMain.html?blkMainContent=lamsoon/P003"
+            "url": "http://node02atmblinus.azurewebsites.net/home/lamsoonMain.html?blkMainContent=lamsoon/P003"
         }]
     },
     {

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Information</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1 data-dojo-type="dojox/mobile/Heading">Phone Information</h1>
+    <div style="height: 100%;" data-dojo-type="dojox/mobile/ScrollableView" data-dojo-mixins="app/widget/_Resizable">
+        <form>
+            <div data-dojo-type="dojox/mobile/RoundRect">
+                <div data-dojo-type="dojox/mobile/FormLayout">
+                    <fieldset>
+                        <legend>Phone</legend>
+                        <div>
+                            <label>Platform</label>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/phone/platform/TextBox'" value="undefined" disabled />
+                        </div>
+                        <div>
+                            <label>Version</label>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/phone/version/TextBox'" value="undefined" disabled />
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label>Connection</label>
+                        <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/connection/TextBox'" value="undefined" disabled />
+                    </div>
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <div>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/contact/name/TextBox'" value="undefined" disabled />
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/contact/phone/TextBox'" value="undefined" disabled />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Location</legend>
+                        <div>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/location/latitude/TextBox'" value="undefined" disabled />
+                            <input data-dojo-type="dojox/mobile/TextBox"data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/location/longitude/TextBox'"  value="undefined" disabled />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Accelerometer</legend>
+                        <div>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/accelerometer/x/TextBox'" value="undefined" disabled />
+                        </div>
+                        <div>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/accelerometer/y/TextBox'" value="undefined" disabled />
+                        </div>
+                        <div>
+                            <input data-dojo-type="dojox/mobile/TextBox" data-dojo-mixins="app/widget/_Valuable" data-dojo-props="setValueTopicId: '/value/phoneInformation/accelerometer/z/TextBox'" value="undefined" disabled />
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        <table style="width: 100%; border: none; border-collapse: collapse; padding: 0;">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;"></td>
+                    <td style="width: 50%;">
+                        <div style="height: 42px;" data-dojo-type="dojox/mobile/GridLayout" data-dojo-props="cols: 2">
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblBlueButton full" data-dojo-type="app/widget/BtnGetResourceFrom" data-dojo-props="url: 'http://test16atmblinus.azurewebsites.net/www/MyApp16.apk'">Upgrade</button>
+                            </div>
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblRedButton full" data-dojo-type="app/widget/BtnLinkTo" data-dojo-props="url: 'http://test16atmblinus.azurewebsites.net/www/mobile.html'">Surf</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 25%;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

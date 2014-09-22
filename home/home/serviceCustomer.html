@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>聯絡客戶代表</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1 data-dojo-type="dojox/mobile/Heading">信息</h1>
+    <div style="height: 100%;" data-dojo-type="dojox/mobile/ScrollableView" data-dojo-mixins="app/widget/_Resizable">
+        <form>
+            <div data-dojo-type="dojox/mobile/RoundRect">
+                <div data-dojo-type="dojox/mobile/FormLayout">
+                    <div>
+                        <label>內容</label>
+                        <textarea style="background-color: white; border: solid 1px gray;" data-dojo-type="dojox/mobile/TextArea" rows="5" cols="40"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <table style="width: 100%; border: none; border-collapse: collapse; padding: 0;">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;"></td>
+                    <td style="width: 50%;">
+                        <div style="height: 42px;" data-dojo-type="dojox/mobile/GridLayout" data-dojo-props="cols: 2">
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblBlueButton full" data-dojo-type="app/widget/BtnGetResourceFrom" data-dojo-props="url: 'http://test16atmblinus.azurewebsites.net/www/MyApp16.apk'">發送</button>
+                            </div>
+                            <div data-dojo-type="dojox/mobile/Pane">
+                                <button class="mblRedButton full" data-dojo-type="app/widget/BtnLinkTo" data-dojo-props="url: 'http://test16atmblinus.azurewebsites.net/www/mobile.html'">清空</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 25%;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

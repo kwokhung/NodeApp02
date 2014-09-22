@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wechat</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div style="height: 500px;" data-dojo-type="dojox/mobile/FixedSplitter" data-dojo-props="orientation: 'V', variablePane: -1">
+        <div data-dojo-type="dojox/mobile/Container">
+            <h1 data-dojo-type="dojox/mobile/Heading">Wechat</h1>
+        </div>
+        <div data-dojo-type="dojox/mobile/Container">
+            <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="shadow: true">
+                <div data-dojo-type="dojox/mobile/ScrollablePane" data-dojo-mixins="app/widget/_Resizable" data-dojo-props="height: '300px'">
+                    <ul data-dojo-type="app/widget/special/home/ListPairedDevice">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="z-index: -1;" data-dojo-type="dojox/mobile/Overlay" data-dojo-mixins="app/widget/_ShowHideSubscriber" data-dojo-props="showMe: true">
+        <div data-dojo-type="dojox/mobile/Container">
+            <h1 data-dojo-type="dojox/mobile/Heading">
+                <table style="width: 100%; border: none; border-collapse: collapse; padding: 0;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 25%;">
+                                <span style="float: left;" data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-mixins="app/widget/_Publishable" data-dojo-props="label: 'Top', arrow: 'left', topicId: '/pairedDeviceList/goto.top'"></span>
+                            </td>
+                            <td style="width: 50%;">
+                                <div style="height: 42px;" data-dojo-type="dojox/mobile/GridLayout" data-dojo-props="cols: 2">
+                                    <div data-dojo-type="dojox/mobile/Pane">
+                                        <button class="mblRedButton full" data-dojo-type="app/widget/BtnBluetooth">Setting</button>
+                                    </div>
+                                    <div data-dojo-type="dojox/mobile/Pane">
+                                        <button class="mblBlueButton full" data-dojo-type="dojox/mobile/Button" data-dojo-mixins="app/widget/_Publishable" data-dojo-props="topicId: '/pairedDeviceList/clear.message'">Clear</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 25%;">
+                                <span style="float: right;" data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-mixins="app/widget/_Publishable" data-dojo-props="label: 'Bottom', arrow: 'right', topicId: '/pairedDeviceList/goto.bottom'"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h1>
+            <h1 data-dojo-type="dojox/mobile/Heading">
+                <ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props="barType: 'tabBar', fill: 'auto', center: true">
+                    <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props="moveTo: '#viewBluetoothMessageList', transition: 'slidev', transitionDir: -1">What are said?</li>
+                </ul>
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
